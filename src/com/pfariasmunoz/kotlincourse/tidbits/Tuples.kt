@@ -25,4 +25,14 @@ fun main(args: Array<String>) {
     // we can to it with classes too
     val (id, name, email) = CustomerKotlin(3, "Pablo", "pfariasmunoz@gmail.com")
     println("id: $id, name: $name and email: $email ")
+
+    val listOfCapitalsAndCountries =
+            listOf(Pair("Spain", "Madrid"),
+                    Pair("France", "Paris"),
+                    Pair("Chile", "Santiago"),
+                    "United States" to "Washington")
+
+    for ((country, capital) in listOfCapitalsAndCountries) {
+        println("country: $country - capital: $capital")
+    }
 }
