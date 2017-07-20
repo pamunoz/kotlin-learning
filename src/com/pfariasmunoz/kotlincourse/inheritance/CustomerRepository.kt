@@ -7,7 +7,7 @@ interface CustomerRepository {
     // you cannot give value to a property of an interface
 
     val isEmpty: Boolean
-        // but you can implement getters and setters
+            // but you can implement getters and setters
         get() = true
 
     fun store(obj: Customer) {
