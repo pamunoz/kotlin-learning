@@ -16,7 +16,7 @@ interface Repo {
 }
 
 class MyRepo: Repo {
-    
+
     override fun <T> getById(id: Int): T {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
