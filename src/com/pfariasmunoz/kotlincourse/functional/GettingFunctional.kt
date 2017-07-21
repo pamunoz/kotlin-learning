@@ -58,4 +58,7 @@ fun main(args: Array<String>) {
         // Interact with the database
         // it will do the "code" in the try, and then in the finally will do a commit to the db
     }
+
+    // An anonymous function
+    unaryOperation(3, fun(x: Int): Int {return x * x} )
 }
