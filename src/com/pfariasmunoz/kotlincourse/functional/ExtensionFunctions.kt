@@ -22,3 +22,14 @@ class Customer {
 fun Customer.makePreferred(message: String) {
     println(message)
 }
+
+open class BaseClass
+class InheritedClass: BaseClass()
+
+fun BaseClass.extension() {
+    println("base extension")
+}
+
+fun InheritedClass.extension() {
+    println("Inherited extension")
+}
