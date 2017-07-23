@@ -1,5 +1,7 @@
 package com.pfariasmunoz.kotlincourse.functional
 
+import com.pfariasmunoz.kotlincourse.interop.PersonJava
+
 fun String.hello() {
     println("Its me!!")
 }
@@ -33,3 +35,4 @@ fun BaseClass.extension() {
 fun InheritedClass.extension() {
     println("Inherited extension")
 }
+
