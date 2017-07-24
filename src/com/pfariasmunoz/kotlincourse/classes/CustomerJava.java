@@ -1,5 +1,7 @@
 package com.pfariasmunoz.kotlincourse.classes;
 
+import org.jetbrains.annotations.NotNull;
+
 public class CustomerJava {
     private int id;
     private String name;
@@ -61,5 +63,13 @@ public class CustomerJava {
 
     public void prettyPrint() {
         System.out.printf("Id: %d - Name: %s%n" ,id, name);
+    }
+
+    public @NotNull String neverNull() {
+        return "A String thaths never null";
+    }
+
+    public String sometimesNull() {
+        return "A string";
     }
 }

@@ -20,11 +20,11 @@ class PersonKotlin: PersonJava()
 class KotlinCustomerRepo: CustomerJavaRepository {
 
     override fun gerById(id: Int): CustomerJava {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return CustomerJava()
     }
 
-    override fun getAll(): MutableList<CustomerJava> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun getAll(): List<CustomerJava> {
+        return listOf(CustomerJava())
     }
 
 }

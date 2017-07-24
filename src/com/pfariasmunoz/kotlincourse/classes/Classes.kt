@@ -1,5 +1,6 @@
 package com.pfariasmunoz.kotlincourse.classes
 
+import java.io.IOException
 import java.util.*
 
 // the open a closing braces are only needed if the class has properties
@@ -30,9 +31,33 @@ class User(val id: Int, var name: String, val yearOfBirth: Int) {
         }
 }
 // a {data} class gives getters and setters along with to string, equals, and hash code
-data class CustomerKotlin(var id: Int, var name: String, var email: String)
+data class CustomerKotlin(var id: Int, var name: String, var email: String) {
+    @JvmField val someProperty = "value"
+
+    @JvmOverloads fun changeStatus(status: Status = Status.Current) {
+
+    }
+
+    @JvmName("preferencial") fun makePreferential() {
+
+    }
+
+    @Throws(IOException::class)fun loadStatistics(filename: String) {
+        if (filename == "") {
+            throw IOException("filename cannot blank")
+        }
+    }
+}
+
+enum class Status {
+    Current,
+    Past
+}
 
 data class SimpleUser(val name: String, val email: String) {
+
+
+
     override fun toString(): String {
         return "{\"name\":\"$name\",\"email\":\"$email\"}"
     }
