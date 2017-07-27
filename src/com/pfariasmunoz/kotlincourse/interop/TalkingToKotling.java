@@ -34,5 +34,12 @@ public class TalkingToKotling {
         // we can use this name because of the anotation @JvmName
         customerKotlin.preferencial();
 
+        // Accessing top level functions from Kotlin in Java
+        KotlinFunctions.prefix("some", "value");
+
+        // Accessing fiels ( with the const modifier) from Kotlin in Java
+        int copyRightYear = KotlinFunctions.copyrightYear;
+        System.out.println(copyRightYear);
+
     }
 }
