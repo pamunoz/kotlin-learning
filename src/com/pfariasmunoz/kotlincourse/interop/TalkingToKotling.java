@@ -1,5 +1,6 @@
 package com.pfariasmunoz.kotlincourse.interop;
 
+import com.pfariasmunoz.kotlincourse.classes.ClassesKt;
 import com.pfariasmunoz.kotlincourse.classes.CustomerKotlin;
 import com.pfariasmunoz.kotlincourse.classes.Status;
 
@@ -40,6 +41,10 @@ public class TalkingToKotling {
         // Accessing fiels ( with the const modifier) from Kotlin in Java
         int copyRightYear = KotlinFunctions.copyrightYear;
         System.out.println(copyRightYear);
+
+        // Talking to extensions functions
+        // customerKotlin.extensions WRONG
+        ClassesKt.extension(customerKotlin);// We have to add the filename with Kt
 
     }
 }
